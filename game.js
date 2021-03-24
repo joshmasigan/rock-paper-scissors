@@ -44,7 +44,6 @@ function playGame()
     let tie = true;
     while(tie)
     {
-        // code here to determine winner
         if(player === "Rock")
         {
             if(computer === "Paper")
@@ -82,7 +81,7 @@ function playGame()
                 winner = true;
             }
         }
-        else
+        else if(player === computer)
         {
             console.log("You tied! Please select again");
             let player = askPlayerChoice();
