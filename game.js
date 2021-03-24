@@ -44,7 +44,13 @@ function playGame()
     let tie = true;
     while(tie)
     {
-        if(player === "Rock")
+        if(player === computer)
+        {
+            console.log("You tied! Please select again");
+            player = askPlayerChoice();
+            computer = generateComputerChoice();
+        }
+        else if(player === "Rock")
         {
             if(computer === "Paper")
             {
@@ -81,12 +87,7 @@ function playGame()
                 winner = true;
             }
         }
-        else if(player === computer)
-        {
-            console.log("You tied! Please select again");
-            let player = askPlayerChoice();
-            let computer = generateComputerChoice();
-        }
+
     }
     if(winner)
     {
@@ -112,7 +113,7 @@ function playMatch()
         }
     }
     (wins > 2) ? console.log("Congratulations! You won " + wins + " games out of 5!"):
-                 console.log("You lost! The computer won " + (5 - wins) + " games out of 5!");
+                 console.log("You lost! You won " + wins + " games out of 5!");
     // play a 5 game match
     // determine winner after 5 games
 }
