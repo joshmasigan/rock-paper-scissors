@@ -102,7 +102,6 @@ function playGame()
 
 function playMatch()
 {
-    // playGame();
     let wins = 0;
     for(let i = 0; i < 5; ++i)
     {
@@ -112,8 +111,8 @@ function playMatch()
             ++wins;
         }
     }
-    (wins > 2) ? console.log("Congratulations! You won " + wins + " games out of 5!"):
-                 console.log("You lost! You won " + wins + " games out of 5!");
+    (wins > 2) ? console.log("Congratulations the match! You won " + wins + " games out of 5!"):
+                 console.log("You lost the match! You won " + wins + " games out of 5!");
     // play a 5 game match
     // determine winner after 5 games
 }
