@@ -1,6 +1,13 @@
 RPS V2
 March 30/2021
 
+CONSIDER:
+----------
+Store score as global variable
+It may be better to create a separate function for each button
+- EX. if rock clicked, test rock vs CPU choice
+    - Increase global score of winner
+
 HTML
 ----------
 - Basic HTML framework built
